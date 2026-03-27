@@ -9,12 +9,13 @@ datos = banner.split("-")
 datos_software = datos[2].split("_")
 
 print("=" * 40)
-print("Características del banner")
+print("          ANALIZADOR DE BANNER")
 print("=" * 40)
-print(f"""Protocolo: {datos[0]} 
-Versión del protocolo: {datos[1]}
-Software: {datos_software[0]}
-Versión software: {datos_software[1].split(" ")[0]}""")
+print(f"""            Datos del banner
+   Protocolo             : {datos[0]} 
+   Versión del protocolo : {datos[1]}
+   Software              : {datos_software[0]}
+   Versión software      : {datos_software[1].split(" ")[0]}""")
 print("=" * 40)
 
 

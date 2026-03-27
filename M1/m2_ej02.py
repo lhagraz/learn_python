@@ -10,15 +10,17 @@ cantidad_host = int(input("Ingrese la cantidad de hosts necesarios: "))
 bits = 1
 total_ips = 2 ** bits
 
+#calculo para la cantidad de IPs y bits nesesario
 while total_ips < cantidad_host:
     bits += 1
     total_ips = 2 ** bits
     
 host_utilizables = total_ips - 2
 
-
 print("=" * 40) 
-print(f"Bits necesarios: {bits}")  
-print(f"IPs totales en subred: {total_ips}")  
-print(f"Host utilizables: {host_utilizables}")  
+print("       CALCULADORA DE SUB-REDES")
+print("=" * 40) 
+print(f"   Bits necesarios       : {bits}")  
+print(f"   IPs totales en subred : {total_ips}")  
+print(f"   Host utilizables      : {host_utilizables}")  
 print("=" * 40) 

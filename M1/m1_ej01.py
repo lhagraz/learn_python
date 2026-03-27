@@ -9,14 +9,13 @@ nro_puertos = 5
 estado_host = False
 estado_legible = "Activo" if estado_host else "Inactivo"
 
-print(f"""
-=========================================
-Datos del objetivo
-=========================================
-Dirección IP: {direccion_ip}
-Dominio: {dominio}
-Sistema operativo: {sistema_op}
-Número de puertos abiertos: {nro_puertos}
-Estado del host: {estado_legible}
-=========================================
-""")
+print("=" * 60)
+print("                      RECONOCIMIENTO")
+print("=" * 60)
+print(f"""                    Datos del objetivo
+   Dirección IP              : {direccion_ip}
+   Dominio                   : {dominio}
+   Sistema operativo         : {sistema_op}
+   Número de puertos abiertos: {nro_puertos}
+   Estado del host           : {estado_legible}""")
+print("=" * 60)
