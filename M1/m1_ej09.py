@@ -9,3 +9,20 @@ Usa únicamente operadores de comparación y booleanos (aún no hemos visto `if`
 la lógica con `and`, `or`, `print` y expresiones booleanas creativas — es un reto intencional).
 
 '''
+nro_port = int(input("Ingrese numero de puerto: "))
+
+
+#Verificación de puerto
+verificacion = (
+(nro_port >= 0 and  nro_port <= 1023 and "Puerto bien conocido (sistema)") or
+(nro_port > 1023 and  nro_port <= 49151 and "Puerto registrado (aplicación)") or
+(nro_port > 49151 and  nro_port <= 65535 and "Puerto dinámico/privado") or
+(nro_port < 0 and "Puerto inválido") or
+(nro_port > 65535 and "Puerto inválido")
+)
+print("\n" + "=" * 45)
+print("            CLASIFICADOR DE PUERTO")
+print("=" * 45)
+print(f"  Número de puerto : {nro_port} ")
+print(f"  Estado de puerto : {verificacion} ")
+print("=" * 45)
