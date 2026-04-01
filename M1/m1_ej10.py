@@ -7,3 +7,23 @@ los siguientes datos de un objetivo: IP, dominio, sistema operativo,
  herramienta de reconocimiento profesional. El informe debe tener encabezado, 
  separadores visuales con `=` o `-`, y cada campo en su propia línea etiquetada.
 '''
+ip = input("Ingrese IP objetivo: ")
+dominio = input("Ingrese dominio: ")
+sistema_op = input("Ingrese sistema operativo: ")
+version_so = input("Ingrese versión del SO: ")
+puerto = int(input("Ingrese puerto principal: "))
+firewall = input("¿Tiene firewall activo? (si/no): ")
+estado_firewall = "Activo" if firewall == "si" else "Inactivo"
+
+print("\n" + "=" * 45)
+print("          INFORME DE RECONOCIMIENTO")
+print("=" * 45)
+print(f"""
+      IP                : {ip}
+      DOMINIO           : {dominio}                
+      SISTEMA OPERATIVO : {sistema_op}                
+      VERSIÓN SO         : {version_so}       
+      PUERTO PRINCIPAL  : {puerto}               
+      FIREWALL          : {estado_firewall}                 
+""")
+print("=" * 45)
